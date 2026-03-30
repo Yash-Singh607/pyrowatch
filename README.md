@@ -116,7 +116,6 @@ pyrowatch/
 |-- src/
 |   |-- __init__.py          package marker
 |   |-- features.py          feature extraction (HSV, Laplacian, masks)
-|   |-- generate_samples.py  synthetic labeled image generator
 |   |-- train.py             RandomForest training + evaluation
 |   |-- detector.py          detection engine + CLI entrypoint
 |   |-- evaluate.py          metrics, confusion matrix, feature plots
@@ -124,8 +123,8 @@ pyrowatch/
 |-- tests/
 |   `-- test_detector.py     unit tests (pytest)
 |-- data/
-|   `-- sample_images/       created by generate_samples.py
-|-- outputs/                 annotated images + JSON + plots (auto-created)
+|   `-- sample_images/       
+|-- outputs/                 annotated images + JSON + plots 
 |-- models/                  rf_classifier.pkl saved here after training
 |-- docs/
 |   `-- report.md            project report
@@ -235,7 +234,7 @@ This executes four steps:
 
 | Step | What runs                                          |
 |------|----------------------------------------------------|
-| 1/4  | `python src/generate_samples.py` — 60 labeled images |
+| 1/4  | `python src/features.py` — feature extraction (HSV, Laplacian, masks) |
 | 2/4  | `python src/train.py` — train RandomForest, print metrics |
 | 3/4  | `python src/detector.py ... --save --json` — detect all images |
 | 4/4  | `python src/evaluate.py` — metrics + confusion matrix + plots |
@@ -243,7 +242,7 @@ This executes four steps:
 ### Windows — equivalent commands
 
 ```cmd
-python src/generate_samples.py
+python src/features.py
 python src/train.py
 python src/detector.py --source data/sample_images/ --model models/rf_classifier.pkl --save --json
 python src/evaluate.py --model models/rf_classifier.pkl
@@ -257,28 +256,10 @@ Run each step in order. Each step depends on the previous.
 
 ---
 
-### Step 1 — Generate labeled training and test images
+### Step 1 — feature extraction (HSV, Laplacian, masks)
 
 ```bash
-python src/generate_samples.py
-```
-
-Generates 60 procedurally varied images (20 clear, 20 smoke, 20 fire) in
-`data/sample_images/`. Each image uses a different random seed so no two
-images are identical.
-
-Expected output:
-```
-Generating 60 images (20 per class) -> data/sample_images/
-  clear:  20 images
-  smoke:  20 images
-  fire:   20 images
-Done. 60 images saved.
-```
-
-Optional arguments:
-```bash
-python src/generate_samples.py --count 120 --seed 99 --out-dir data/my_images/
+python src/features.py
 ```
 
 ---
@@ -356,7 +337,7 @@ python src/detector.py \
     --save --json
 ```
 
-Processes all 60 images. Saves annotated copies to `outputs/` and a JSON
+Processes all sample images. Saves annotated copies to `outputs/` and a JSON
 results file.
 
 Expected output (last lines):
@@ -471,16 +452,10 @@ Options:
 
 ---
 
-### generate_samples.py
+### feature.py
 
 ```
-python src/generate_samples.py [OPTIONS]
-
-Options:
-  --out-dir DIR   output directory (default: data/sample_images)
-  --count   INT   total images, must be divisible by 3 (default: 60)
-  --seed    INT   random seed (default: 42)
-```
+python src/feature.py 
 
 ---
 
@@ -692,7 +667,7 @@ python src/detector.py --source data/sample_images/fire_001.jpg --save
 pip install ultralytics
 ```
 
-Train on D-Fire dataset (https://github.com/gaiasd/DFireDataset):
+Train on Fire and Smoke dataset (https://www.kaggle.com/datasets/dataclusterlabs/fire-and-smoke-dataset):
 
 ```bash
 yolo train model=yolov8n.pt data=dfire.yaml epochs=50 imgsz=640
@@ -771,13 +746,12 @@ tests/test_detector.py::TestAnnotate::test_annotate_does_not_modify_original   P
 
 ```bash
 python -c "import cv2, numpy, sklearn, matplotlib; print('Packages OK')"
-python src/generate_samples.py
+python src/features.py
 python src/train.py
 python src/evaluate.py --model models/rf_classifier.pkl
 ```
 
-All four must complete without error. The final evaluation table must show
-100.0% across all metrics.
+All four must complete without error. 
 
 ---
 

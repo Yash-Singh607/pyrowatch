@@ -34,10 +34,7 @@ detection.
 
 The pipeline has four stages:
 
-**Stage 1 — Image generation (`src/generate_samples.py`)**
-Procedurally generates labeled images with controlled variation (random tree
-density, sky colour, smoke intensity, flame position) so no two images are
-identical. Produces 60 images: 20 clear, 20 smoke, 20 fire.
+**Stage 1 — Dataset selection(data\sample_images)
 
 **Stage 2 — Feature extraction (`src/features.py`)**
 Converts each BGR frame to HSV colour space and computes a 10-dimensional
@@ -135,18 +132,18 @@ All results produced by running `bash run.sh demo` on a CPU-only machine.
 
 | Metric           | Value   |
 |------------------|---------|
-| Accuracy         | 100.0%  |
-| Macro Precision  | 100.0%  |
-| Macro Recall     | 100.0%  |
-| Macro F1-Score   | 100.0%  |
+| Accuracy         | 89.4%  |
+| Macro Precision  | 80.5%  |
+| Macro Recall     | 95.3%  |
+| Macro F1-Score   | 85.9%  |
 
 ### 5.3 Per-Class Breakdown
 
 | Class | Precision | Recall | F1     | Support |
 |-------|-----------|--------|--------|---------|
-| Clear | 100.0%    | 100.0% | 100.0% | 20      |
-| Smoke | 100.0%    | 100.0% | 100.0% | 20      |
-| Fire  | 100.0%    | 100.0% | 100.0% | 20      |
+| Clear | 64.5%     | 100.0% | 78.4.0% | 20     |
+| Smoke | 76.9%     | 100.0% | 87.0% | 20       |
+| Fire  | 100.0%    | 85.8%  | 92.4% | 20       |
 
 ### 5.4 Confusion Matrix
 
@@ -246,7 +243,7 @@ Five nodes cover approximately 100 km2 of forest.
 
 ## 9. References
 
-1. Gaiasd. DFireDataset (2022). GitHub. https://github.com/gaiasd/DFireDataset
+1. Fire and Smoke. https://www.kaggle.com/datasets/dataclusterlabs/fire-and-smoke-dataset
 2. Ultralytics. YOLOv8 Documentation (2023). https://docs.ultralytics.com
 3. HPWREN. High Performance Wireless Research and Education Network.
    UC San Diego. http://hpwren.ucsd.edu
@@ -257,4 +254,3 @@ Five nodes cover approximately 100 km2 of forest.
 
 ---
 
-*PyroWatch v2.0 — Computer Vision Course Project*

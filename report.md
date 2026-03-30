@@ -34,7 +34,7 @@ detection.
 
 The pipeline has four stages:
 
-**Stage 1 — Dataset selection(data\sample_images)
+Stage 1 — Dataset selection(data\sample_images)
 
 **Stage 2 — Feature extraction (`src/features.py`)**
 Converts each BGR frame to HSV colour space and computes a 10-dimensional

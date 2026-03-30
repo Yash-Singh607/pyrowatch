@@ -1,0 +1,528 @@
+{
+  "timestamp": "2026-03-29T15:51:21.675476",
+  "n_images": 60,
+  "model": "models/rf_classifier.pkl",
+  "accuracy": 1.0,
+  "macro_precision": 1.0,
+  "macro_recall": 1.0,
+  "macro_f1": 1.0,
+  "per_class": {
+    "Clear": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 20
+    },
+    "Smoke": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 20
+    },
+    "Fire": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 20
+    }
+  },
+  "confusion_matrix": [
+    [
+      20,
+      0,
+      0
+    ],
+    [
+      0,
+      20,
+      0
+    ],
+    [
+      0,
+      0,
+      20
+    ]
+  ],
+  "per_image": [
+    {
+      "image": "clear_001.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 1.0,
+      "fire_pct": 0.5,
+      "correct": true
+    },
+    {
+      "image": "clear_002.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 0.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "clear_003.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 0.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "clear_004.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 0.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "clear_005.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 0.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "clear_006.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 0.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "clear_007.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 0.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "clear_008.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 0.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "clear_009.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 0.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "clear_010.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 0.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "clear_011.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 2.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "clear_012.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 0.0,
+      "fire_pct": 0.5,
+      "correct": true
+    },
+    {
+      "image": "clear_013.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 0.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "clear_014.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 0.0,
+      "fire_pct": 0.5,
+      "correct": true
+    },
+    {
+      "image": "clear_015.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 2.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "clear_016.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 0.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "clear_017.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 0.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "clear_018.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 0.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "clear_019.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 2.0,
+      "fire_pct": 0.5,
+      "correct": true
+    },
+    {
+      "image": "clear_020.jpg",
+      "true": "Clear",
+      "pred": "Clear",
+      "smoke_pct": 0.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "fire_001.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 0.0,
+      "fire_pct": 100.0,
+      "correct": true
+    },
+    {
+      "image": "fire_002.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 1.0,
+      "fire_pct": 99.0,
+      "correct": true
+    },
+    {
+      "image": "fire_003.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 0.0,
+      "fire_pct": 100.0,
+      "correct": true
+    },
+    {
+      "image": "fire_004.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 1.0,
+      "fire_pct": 99.0,
+      "correct": true
+    },
+    {
+      "image": "fire_005.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 0.0,
+      "fire_pct": 99.5,
+      "correct": true
+    },
+    {
+      "image": "fire_006.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 0.0,
+      "fire_pct": 93.5,
+      "correct": true
+    },
+    {
+      "image": "fire_007.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 0.0,
+      "fire_pct": 100.0,
+      "correct": true
+    },
+    {
+      "image": "fire_008.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 0.0,
+      "fire_pct": 100.0,
+      "correct": true
+    },
+    {
+      "image": "fire_009.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 0.0,
+      "fire_pct": 100.0,
+      "correct": true
+    },
+    {
+      "image": "fire_010.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 0.0,
+      "fire_pct": 100.0,
+      "correct": true
+    },
+    {
+      "image": "fire_011.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 0.0,
+      "fire_pct": 100.0,
+      "correct": true
+    },
+    {
+      "image": "fire_012.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 1.0,
+      "fire_pct": 99.0,
+      "correct": true
+    },
+    {
+      "image": "fire_013.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 0.0,
+      "fire_pct": 100.0,
+      "correct": true
+    },
+    {
+      "image": "fire_014.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 0.0,
+      "fire_pct": 100.0,
+      "correct": true
+    },
+    {
+      "image": "fire_015.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 0.0,
+      "fire_pct": 100.0,
+      "correct": true
+    },
+    {
+      "image": "fire_016.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 0.0,
+      "fire_pct": 100.0,
+      "correct": true
+    },
+    {
+      "image": "fire_017.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 1.0,
+      "fire_pct": 98.5,
+      "correct": true
+    },
+    {
+      "image": "fire_018.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 0.0,
+      "fire_pct": 100.0,
+      "correct": true
+    },
+    {
+      "image": "fire_019.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 0.5,
+      "fire_pct": 99.0,
+      "correct": true
+    },
+    {
+      "image": "fire_020.jpg",
+      "true": "Fire",
+      "pred": "Fire",
+      "smoke_pct": 0.0,
+      "fire_pct": 100.0,
+      "correct": true
+    },
+    {
+      "image": "smoke_001.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 73.0,
+      "fire_pct": 23.0,
+      "correct": true
+    },
+    {
+      "image": "smoke_002.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 100.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "smoke_003.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 100.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "smoke_004.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 99.5,
+      "fire_pct": 0.5,
+      "correct": true
+    },
+    {
+      "image": "smoke_005.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 99.5,
+      "fire_pct": 0.5,
+      "correct": true
+    },
+    {
+      "image": "smoke_006.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 100.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "smoke_007.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 88.5,
+      "fire_pct": 10.5,
+      "correct": true
+    },
+    {
+      "image": "smoke_008.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 100.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "smoke_009.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 100.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "smoke_010.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 99.0,
+      "fire_pct": 1.0,
+      "correct": true
+    },
+    {
+      "image": "smoke_011.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 100.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "smoke_012.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 100.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "smoke_013.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 100.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "smoke_014.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 100.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "smoke_015.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 99.5,
+      "fire_pct": 0.5,
+      "correct": true
+    },
+    {
+      "image": "smoke_016.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 100.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "smoke_017.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 100.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "smoke_018.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 100.0,
+      "fire_pct": 0.0,
+      "correct": true
+    },
+    {
+      "image": "smoke_019.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 98.5,
+      "fire_pct": 1.5,
+      "correct": true
+    },
+    {
+      "image": "smoke_020.jpg",
+      "true": "Smoke",
+      "pred": "Smoke",
+      "smoke_pct": 100.0,
+      "fire_pct": 0.0,
+      "correct": true
+    }
+  ]
+}

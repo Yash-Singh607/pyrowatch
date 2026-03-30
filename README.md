@@ -792,6 +792,3 @@ All four must complete without error. The final evaluation table must show
 Choose as per requirement.
 ---
 
-## License
-
-MIT — Free for research, academic, government, and NGO use.

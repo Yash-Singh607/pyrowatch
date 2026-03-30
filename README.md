@@ -786,9 +786,10 @@ All four must complete without error. The final evaluation table must show
 | Dataset         | Images   | Source                                          |
 |-----------------|----------|-------------------------------------------------|
 | D-Fire          | 21,527   | https://github.com/gaiasd/DFireDataset          |
-| HPWREN Cameras  | Ongoing  | http://hpwren.ucsd.edu                          |
 | Kaggle Fire     | 999      | https://kaggle.com/datasets/phylake1337/fire-dataset |
+| Fire and Smoke  | 7000+    | https://www.kaggle.com/datasets/dataclusterlabs/fire-and-smoke-dataset |
 
+Choose as per requirement.
 ---
 
 ## License

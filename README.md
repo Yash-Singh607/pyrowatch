@@ -47,14 +47,14 @@ saturation statistics.
 - **OpenCV heuristic** (fallback): rule-based thresholds on smoke_conf and
   fire_conf scores when no trained model is present.
 
-**Verified results on 60-image test set (20 per class, held-out 80/20 split):**
+**Verified results on (100+)-image test set (20 per class, held-out 80/20 split):**
 
 | Metric           | Train CV F1      | Test Score |
 |------------------|------------------|------------|
-| Accuracy         | 0.977 +/- 0.046  | 89.0%     |
-| Macro Precision  | —                | 80.5%     |
-| Macro Recall     | —                | 95.3%     |
-| Macro F1-Score   | —                | 85.9%     |
+| Accuracy         | 0.94 +/- 0.046  n| 89.0%      |
+| Macro Precision  | —                | 80.5%      |
+| Macro Recall     | —                | 95.3%      |
+| Macro F1-Score   | —                | 85.9%      |
 
 Per-class (test set, 4 samples each):
 
@@ -309,9 +309,9 @@ Training RandomForest classifier ...
 
   Confusion matrix (rows=true, cols=pred):
        Clear     Fire    Smoke
-  Clear    4        0        0
-  Fire     0        4        0
-  Smoke    0        0        4
+  Clear   18        0        2
+  Fire     0        17       3
+  Smoke    0        1        19
 
   Feature importances:
   lap_mean       0.1876  #######
